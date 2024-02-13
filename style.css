@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+html {
+    height: 100%;
+    
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F3F5FC
+}
+
+/* MAIN */
+
+main{
+    margin: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SECTION ONE */
+
+.section-one{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 10%;
+}
+
+.texto{
+    margin: 10px auto;
+    width: 80%;
+    height: 100%;
+    background-color: #F3F5FC;
+}
+
+.input{
+    border: none;
+    color: #052051;
+    font-size: 20px;
+    outline: none;
+    background-color: #F3F5FC;
+    margin: 10px 0 250px
+}
+
+.aviso{
+    padding: 10px 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0;
+}
+
+.button{
+    border: none;
+    padding: 15px 25px;
+    width: 49%;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#encrypt{
+    background-color: #0A3871;
+    color: white;
+}
+
+#decrypt{
+    background-color: #D8DFE8;
+    outline: 2px solid #0A3871;
+    color: #0A3871;
+}
+
+/* SECTION TWO */
+
+.section-two{
+    width: 30%;
+    padding: 60px 0;
+    margin: 0 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-two img{
+    padding: 40px 10px 10px 10px;
+    width: 70%;
+}
+
+.texto-titulo{
+    font-weight: bold;
+}
+.texto-descripcion{
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+}
+
+.contenedor-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor-redes a{
+    color: #0A3871;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #0A3871;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.contenedor-redes a:hover{
+    background-color: #052051; 
+    border: none; 
+    color: white;
+}
