@@ -8,10 +8,11 @@
 }
 html {
     height: 100%;
-    
+    width: 100%;
 }
 body {
     height: 100%;
+    min-width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,7 +85,7 @@ textarea{
 
 #decrypt{
     background-color: #D8DFE8;
-    outline: 2px solid #0A3871;
+    border: 2px solid #0A3871;
     color: #0A3871;
 }
 
@@ -115,36 +116,4 @@ textarea{
     padding: 5px 0;
     text-align: center;
     height: 10%;
-}
-
-
-/* FOOTER */
-
-footer{
-    text-align: center;
-}
-
-.contenedor-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.contenedor-redes a{
-    color: #0A3871;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #0A3871;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 10px;
-    font-size: 20px;
-    transition: .3s;
-}
-.contenedor-redes a:hover{
-    background-color: #052051; 
-    border: none; 
-    color: white;
 }
