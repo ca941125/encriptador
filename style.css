@@ -80,11 +80,11 @@ textarea{
     font-size: 20px;
     cursor: pointer;
 }
-#encrypt{
+#btn-encriptar{
     background-color: #0A3871;
     color: white;
 }
-#decrypt{
+#btn-desencriptar{
     background-color: #D8DFE8;
     border: 2px solid #0A3871;
     color: #0A3871;
@@ -94,7 +94,6 @@ textarea{
 .section-two{
     width: 25%;
     height: 100%;
-    padding: 60px 0;
     margin: 0 30px;
     background-color: white;
     border-radius: 20px;
@@ -103,8 +102,7 @@ textarea{
     align-items: center;
 }
 .section-two img{
-    padding: 40px 10px 10px 10px;
-    width: 70%;
+    width: 80%;
 }
 .texto-titulo{
     text-align: center;
@@ -114,6 +112,24 @@ textarea{
     padding: 5px 0;
     text-align: center;
     height: 10%;
+}
+.con-texto{
+    padding: 50px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.con-texto .mensaje{
+    background-color: white;
+    height: 90%;
+}
+#btn-copiar{
+    width: 100%;
+    background-color: white;
+    border: 2px solid #0A3871;
+    color: #0A3871;
 }
 
 /* MEDIA QUERIES */
@@ -125,11 +141,9 @@ textarea{
       flex-direction: column;
     }
     main{
-        margin: 15px;
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 100%;
     }
     /* SECTION ONE */
     .section-one{
@@ -139,36 +153,48 @@ textarea{
      
     /* SECTION TWO */
     .section-two{
-        width: 80%;
-        height: 20%;
-        padding: 40px 0;
-        margin: 20px auto;
+        width: 90%;
+        height: 30%;
+        margin: 10px auto;
+        text-align: center;
         border-radius: 20px;
     }
     .section-two img{
         display: none;
     }
+    .con-texto{
+       padding: 15px;
+       display: flex;
+       width: 90%;
+    }
+    .mensaje {
+        width: 100%;
+    }
   }
   /* Celular */
   @media only screen and (max-width: 375px){
     body {
+       
         display: flex;
         flex-direction: column;
         width: 100%;
-      }
-      main{
-        margin: 15px;
+    }
+    main{
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
-        width: 100%;
-      }
+    }
     /* SECTION ONE */
     .section-one{
         width: 100%;
         text-align: center;
-        margin: 5px 0;
+    }
+    .texto{
+        margin: 5px auto;
+        padding: 0;
     }
     .buttons{
         width: 100%;
@@ -190,5 +216,9 @@ textarea{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .con-texto{
+        width: 100%;
+        padding: 0;
     }
   }
