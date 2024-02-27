@@ -14,14 +14,14 @@
             <img class="logo" src="imagenes/Logo.png" alt="">
             <div class="texto">
                 <div class="text-p">
-                    <textarea name="texto-entrada"  id="texto-entrada" cols=" " rows=" " placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea name="texto-entrada" class="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí"></textarea>
                     <p class="aviso"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p> 
                 </div>
                 <div class="buttons">
-                    <button class="button" id="encrypt">
+                    <button class="button" id="btn-encriptar">
                         Encriptar
                     </button>
-                    <button class="button" id="decrypt">
+                    <button class="button" id="btn-desencriptar">
                         Desencriptar
                     </button>
                 </div>
@@ -29,9 +29,15 @@
         </div>
 
         <div class="section-two">
-            <img src="imagenes/Muñeco.png" alt="">
-            <p class="texto-titulo">Ningún mensaje fue encontrado</p>
-            <p class="texto-descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="sin-texto">
+                <img src="imagenes/Muñeco.png" alt="">
+                <p class="texto-titulo">Ningún mensaje fue encontrado</p>
+                <p class="texto-descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="con-texto" style="display: none;">
+                <textarea name="mensaje" class="mensaje" id="texto-salida"></textarea>
+                <button class="button" id="btn-copiar">Copiar</button>
+            </div>
         </div>
     </main>
 
