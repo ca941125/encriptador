@@ -100,9 +100,16 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
 }
 .section-two img{
     width: 80%;
+    margin: 30px auto;
+}
+.sin-texto{
+    display: flex;
+    flex-direction: column;
+   
 }
 .texto-titulo{
     text-align: center;
