@@ -18,10 +18,10 @@
                     <p class="aviso"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p> 
                 </div>
                 <div class="buttons">
-                    <button class="button" id="btn-encriptar">
+                    <button class="button" id="btn-encriptar" onclick="btnEncriptar()">
                         Encriptar
                     </button>
-                    <button class="button" id="btn-desencriptar">
+                    <button class="button" id="btn-desencriptar" onclick=" btnDesencriptar()">
                         Desencriptar
                     </button>
                 </div>
@@ -34,7 +34,7 @@
                 <p class="texto-titulo">Ningún mensaje fue encontrado</p>
                 <p class="texto-descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div class="con-texto" style="display: none;">
+            <div class="con-texto" style="display: none;" >
                 <textarea name="mensaje" class="mensaje" id="texto-salida"></textarea>
                 <button class="button" id="btn-copiar">Copiar</button>
             </div>
