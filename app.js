@@ -38,3 +38,12 @@ function desencriptar(stringDesencriptado){
     }
     return stringDesencriptado;
 }
+
+function btnCopiar(){
+    navigator.clipboard.writeText(document.querySelector('#texto-salida').innerText)
+    .then(() => {
+    alert('Contenido copiado al portapapeles');
+    },() => {
+    alert('Error al copiar');
+    });
+}
