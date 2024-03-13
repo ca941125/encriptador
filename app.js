@@ -1,5 +1,5 @@
 const textArea = document.querySelector('#texto-entrada');
-const mensaje = document.querySelector('#texto-salida');
+const mensaje = document.querySelector('#textoSalida');
 
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
@@ -39,11 +39,22 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 
-function btnCopiar(){
-    navigator.clipboard.writeText(document.querySelector('#texto-salida').innerText)
-    .then(() => {
-    alert('Contenido copiado al portapapeles');
-    },() => {
-    alert('Error al copiar');
-    });
+function copiarTexto(textoSalida, btnCopiar) {
+  const areaTexto = document.getElementById(textoSalida);// Obtener el elemento del área de texto
+  const texto = areaTexto.value;// Obtener el texto del área de texto
+  areaTexto.select(); // Seleccionar el texto
+
+  navigator.clipboard.writeText(texto).then(() => {// Copiar el texto al portapapeles
+    // Mostrar mensaje de éxito
+    const boton = document.getElementById(btnCopiar);
+    boton.textContent = "Copiado!";
+    setTimeout(() => {
+      boton.textContent = "Copiar";
+    }, 2000);
+  });
+}
+
+function validarTexto() {
+    // Expresión regular para permitir solo letras minúsculas
+    textArea.value = textArea.value.replace(/[^a-z\s]/g, '');
 }
