@@ -14,7 +14,8 @@
             <img class="logo" src="imagenes/Logo.png" alt="">
             <div class="texto">
                 <div class="text-p">
-                    <textarea name="texto-entrada" class="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea name="texto-entrada" class="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí"
+                    oninput="validarTexto()"></textarea>
                     <p class="aviso"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p> 
                 </div>
                 <div class="buttons">
@@ -35,8 +36,8 @@
                 <p class="texto-descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div class="con-texto" style="display: none;" >
-                <textarea name="mensaje" class="mensaje" id="texto-salida"></textarea>
-                <button class="button" id="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                <textarea name="mensaje" class="mensaje" id="textoSalida"></textarea>
+                <button class="button" id="btnCopiar" onclick="copiarTexto('textoSalida', 'btnCopiar')">Copiar</button>
             </div>
         </div>
     </main>
