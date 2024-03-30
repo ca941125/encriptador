@@ -10,5 +10,7 @@ Encriptación y Desencriptación: Convierte texto normal a texto encriptado y vi
 Tecnologías Utilizadas
 
 HTML: Estructura básica de la página web.
+
 CSS: Estilos para una interfaz agradable y responsiva.
+
 JavaScript: Lógica de encriptación/desencriptación y control de eventos.
